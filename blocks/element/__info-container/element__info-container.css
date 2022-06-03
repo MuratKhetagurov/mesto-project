@@ -1,0 +1,11 @@
+.element__info-container {
+    
+    color: #000;
+    width: calc(100% - 42px);
+    margin: 0 21px 0 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}

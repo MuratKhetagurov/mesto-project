@@ -1,0 +1,16 @@
+.footer{
+    max-width: 880px;
+    display: flex;
+    flex-direction: row;
+    color: #545454;
+    margin: 0 auto 60px;
+}
+
+
+@media (max-width: 940px) {
+    .footer {
+        max-width: calc(100% - 38px);
+        margin: 0 auto 36px;
+        
+    }
+}
