@@ -10,7 +10,7 @@
     .profile__name {
         font-size: 27px;
         line-height: 33px;
-        width: 195px;
+        max-width: 195px;
         
     }
 }
