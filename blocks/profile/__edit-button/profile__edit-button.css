@@ -9,6 +9,9 @@
     background-repeat: no-repeat;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    /*тест отображения кнопки с яблока*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
 
 }
 
