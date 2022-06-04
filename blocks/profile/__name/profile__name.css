@@ -1,17 +1,16 @@
 .profile__name {
-    font-size: 42px;
-    font-weight: 500;
-    line-height: 1.14;
-    margin: 0;
-    max-width: 303px;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 0;
+  max-width: 303px;
 }
 
 @media (max-width: 940px) {
-    .profile__name {
-        font-size: 27px;
-        line-height: 33px;
-        max-width: 195px;
-        min-width: 195px;
-        
-    }
+  .profile__name {
+    font-size: 27px;
+    line-height: 33px;
+    max-width: 195px;
+    min-width: 195px;
+  }
 }

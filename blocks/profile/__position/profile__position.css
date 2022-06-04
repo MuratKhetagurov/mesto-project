@@ -1,15 +1,14 @@
 .profile__position {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
 }
 
 @media (max-width: 940px) {
-    .profile__position {
-        margin: 0 auto 36px;
-        font-size: 14px;
-        line-height: 17px;
-        
-    }
+  .profile__position {
+    margin: 0 auto 36px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

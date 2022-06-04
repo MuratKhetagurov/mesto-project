@@ -1,21 +1,17 @@
 .element__like-button {
-    min-width: 22px;
-    min-height: 19px;
-    background-color: #fff;
-    background-image: url(../../../images/like.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 0.5s ease-in-out;
-    border: none;
-    margin: auto 0;
-    background-size: contain;
-    cursor: pointer;
-    
+  min-width: 22px;
+  min-height: 19px;
+  background-color: #fff;
+  background-image: url(../../../images/like.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s ease-in-out;
+  border: none;
+  margin: auto 0;
+  background-size: contain;
+  cursor: pointer;
 }
-
-
 
 .element__like-button:hover {
-opacity: 0.5;
+  opacity: 0.5;
 }
-

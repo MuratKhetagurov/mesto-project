@@ -1,15 +1,13 @@
 .profile__name-area {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    min-width: 336px;
-    margin: 0 0 16px 0;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 336px;
+  margin: 0 0 16px 0;
 }
 
 @media (max-width: 940px) {
-    .profile__name-area {
-        min-width: 223px;
-        
-    }
+  .profile__name-area {
+    min-width: 223px;
+  }
 }

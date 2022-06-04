@@ -1,28 +1,22 @@
 .popup__edit-form {
-    width: 358px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    height: 26px;
-
-
+  width: 358px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  height: 26px;
 }
 
 .popup__edit-form:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 550px) {
-    .popup__edit-form {
-        width: 238px;
-        
-
-
-
-    }
+  .popup__edit-form {
+    width: 238px;
+  }
 }

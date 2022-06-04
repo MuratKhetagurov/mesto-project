@@ -1,18 +1,16 @@
 .header__logo {
-    max-width: 142px;
-    height: 33px;
-    background-image: url(../../../images/header-logo.png);
-    margin: 0;
-    
+  max-width: 142px;
+  height: 33px;
+  background-image: url(../../../images/header-logo.png);
+  margin: 0;
 }
 
 @media (max-width: 940px) {
-    .header__logo {
-        max-width: 103.74px;
-        margin-left: 27px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-    }
+  .header__logo {
+    max-width: 103.74px;
+    margin-left: 27px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

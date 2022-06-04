@@ -1,25 +1,14 @@
 .header {
-    max-width: 880px;
-    margin: 45px auto 36.25px;
-    border-bottom: 1px solid #545454;
-    height: 74px;
-
-
+  max-width: 880px;
+  margin: 45px auto 36.25px;
+  border-bottom: 1px solid #545454;
+  height: 74px;
 }
 
-/*@media (min-width: 941px) and (max-width: 1200px) {
-    .header {
-        max-width: calc(100% - 40px);
-        
-    }
-}
-*/
 @media (max-width: 940px) {
-    .header {
-        max-width: 100%;
-        max-height: 56px;
-        margin: 28px 0 38.25px;
-        
-    }
+  .header {
+    max-width: 100%;
+    max-height: 56px;
+    margin: 28px 0 38.25px;
+  }
 }
-
