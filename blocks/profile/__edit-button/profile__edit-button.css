@@ -4,7 +4,7 @@
   margin: auto 0;
   background-color: #000;
   border: 1px solid #ffffff;
-  background-image: url(../../../images/edit-button-image.png);
+  background-image: url(../../../images/edit-button.svg);
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.5s ease-in-out;
@@ -12,7 +12,7 @@
 }
 
 .profile__edit-button:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 @media (max-width: 940px) {

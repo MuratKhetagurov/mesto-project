@@ -9,5 +9,7 @@
 @media (max-width: 940px) {
   .profile__name-area {
     min-width: 223px;
+    max-width: 282px;
+    margin-bottom: 14px;
   }
 }

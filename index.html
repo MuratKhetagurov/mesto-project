@@ -16,34 +16,34 @@
         <div class="profile__info">
           <div class="profile__name-area">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button"></button>
+            <button class="profile__edit-button" type="button"></button>
           </div>
           <p class="profile__position">Исследователь океана</p>
         </div>
-        <button class="profile__add-button"></button>
+        <button class="profile__add-button" type="button"></button>
       </section>
       <section class="elements">
         <div class="element">
           <img class="element__image" src="./images/osetia.jpeg" alt="Осетия" />
           <div class="element__info-container">
-            <p class="element__name">Осетия</p>
+            <h3 class="element__name">Осетия</h3>
             <button
-              class="element__like-button element__like-button_active"
+              class="element__like-button element__like-button_active" type="button"
             ></button>
           </div>
         </div>
         <div class="element">
           <img class="element__image" src="./images/krim.jpg" alt="Крым" />
           <div class="element__info-container">
-            <p class="element__name">Крым</p>
-            <button class="element__like-button"></button>
+            <h3 class="element__name">Крым</h3>
+            <button class="element__like-button" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img class="element__image" src="./images/dombai.jpg" alt="Домбай" />
           <div class="element__info-container">
-            <p class="element__name">Домбай</p>
-            <button class="element__like-button"></button>
+            <h3 class="element__name">Домбай</h3>
+            <button class="element__like-button" type="button"></button>
           </div>
         </div>
         <div class="element">
@@ -53,8 +53,8 @@
             alt="Камчатка"
           />
           <div class="element__info-container">
-            <p class="element__name">Камчатка</p>
-            <button class="element__like-button"></button>
+            <h3 class="element__name">Камчатка</h3>
+            <button class="element__like-button" type="button"></button>
           </div>
         </div>
         <div class="element">
@@ -64,15 +64,15 @@
             alt="Карачаево-Черкессия"
           />
           <div class="element__info-container">
-            <p class="element__name">Карачаево-Черкессия</p>
-            <button class="element__like-button"></button>
+            <h3 class="element__name">Карачаево-Черкессия</h3>
+            <button class="element__like-button" type="button"></button>
           </div>
         </div>
         <div class="element">
           <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус" />
           <div class="element__info-container">
-            <p class="element__name">Эльбрус</p>
-            <button class="element__like-button"></button>
+            <h3 class="element__name">Эльбрус</h3>
+            <button class="element__like-button" type="button"></button>
           </div>
         </div>
       </section>
@@ -81,30 +81,31 @@
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
     <div class="popup">
-      <div class="popup__body">
+      
         <div class="popup__container">
-          <h3 class="popup__title">Редактировать профиль</h3>
+          <h2 class="popup__title">Редактировать профиль</h2>
 
-          <form class="popup__form">
+          <form class="popup__form" name="popup__form">
             <fieldset class="popup__fieldset">
               <input
-                class="popup__edit-form"
+                class="popup__input"
                 type="text"
                 name="name"
-                placeholder="Жак-Ив Кусто"
+                placeholder="Ваше имя"
               />
               <input
-                class="popup__edit-form"
+                class="popup__input"
                 type="text"
                 name="position"
-                placeholder="Исследователь океана"
+                placeholder="Расскажите чем занимаетесь"
               />
             </fieldset>
+            <button class="popup__save-button" type="submit">Сохранить</button>
           </form>
-          <button class="popup__save-button">Сохранить</button>
-          <button class="popup__close-button"></button>
+          
+          <button class="popup__close-button" type="reset"></button>
         </div>
-      </div>
+      
     </div>
   </body>
 </html>
