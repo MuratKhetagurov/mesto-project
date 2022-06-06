@@ -19,5 +19,6 @@
   .profile__edit-button {
     min-width: 18px;
     min-height: 18px;
+    background-size: 7.5px 7.5px;
   }
 }
