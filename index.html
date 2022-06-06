@@ -16,11 +16,11 @@
         <div class="profile__info">
           <div class="profile__name-area">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button" type="button"></button>
+            <button class="profile__edit-button" type="button" aria-label="редактировать профиль"></button>
           </div>
           <p class="profile__position">Исследователь океана</p>
         </div>
-        <button class="profile__add-button" type="button"></button>
+        <button class="profile__add-button" type="button" aria-label="добавить фото"></button>
       </section>
       <section class="elements">
         <div class="element">
@@ -29,22 +29,21 @@
             <h3 class="element__name">Осетия</h3>
             <button
               class="element__like-button element__like-button_active"
-              type="button"
-            ></button>
+              type="button" aria-label="Нравится"></button>
           </div>
         </div>
         <div class="element">
           <img class="element__image" src="./images/krim.jpg" alt="Крым" />
           <div class="element__info-container">
             <h3 class="element__name">Крым</h3>
-            <button class="element__like-button" type="button"></button>
+            <button class="element__like-button" type="button" aria-label="нравится"></button>
           </div>
         </div>
         <div class="element">
           <img class="element__image" src="./images/dombai.jpg" alt="Домбай" />
           <div class="element__info-container">
             <h3 class="element__name">Домбай</h3>
-            <button class="element__like-button" type="button"></button>
+            <button class="element__like-button" type="button" aria-label="нравится"></button>
           </div>
         </div>
         <div class="element">
@@ -55,7 +54,7 @@
           />
           <div class="element__info-container">
             <h3 class="element__name">Камчатка</h3>
-            <button class="element__like-button" type="button"></button>
+            <button class="element__like-button" type="button" aria-label="нравится"></button>
           </div>
         </div>
         <div class="element">
@@ -66,14 +65,14 @@
           />
           <div class="element__info-container">
             <h3 class="element__name">Карачаево-Черкессия</h3>
-            <button class="element__like-button" type="button"></button>
+            <button class="element__like-button" type="button" aria-label="нравится"></button>
           </div>
         </div>
         <div class="element">
           <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус" />
           <div class="element__info-container">
             <h3 class="element__name">Эльбрус</h3>
-            <button class="element__like-button" type="button"></button>
+            <button class="element__like-button" type="button" aria-label="нравится"></button>
           </div>
         </div>
       </section>
@@ -85,7 +84,7 @@
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
 
-        <form class="popup__form" name="popup__form">
+        <form class="popup__form" name="popup__profile-form">
           <fieldset class="popup__fieldset">
             <input
               class="popup__input"
@@ -103,7 +102,7 @@
           <button class="popup__save-button" type="submit">Сохранить</button>
         </form>
 
-        <button class="popup__close-button" type="reset"></button>
+        <button class="popup__close-button" type="button" aria-label="закрыть"></button>
       </div>
     </div>
   </body>
