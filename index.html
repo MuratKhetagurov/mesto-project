@@ -22,69 +22,21 @@
         </div>
         <button class="profile__add-button" type="button" aria-label="добавить фото"></button>
       </section>
+
       <section class="elements">
-        <div class="element">
-          <img class="element__image" src="./images/osetia.jpeg" alt="Осетия" />
-          <div class="element__info-container">
-            <h3 class="element__name">Осетия</h3>
-            <button
-              class="element__like-button element__like-button_active"
-              type="button" aria-label="Нравится"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/krim.jpg" alt="Крым" />
-          <div class="element__info-container">
-            <h3 class="element__name">Крым</h3>
-            <button class="element__like-button" type="button" aria-label="нравится"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/dombai.jpg" alt="Домбай" />
-          <div class="element__info-container">
-            <h3 class="element__name">Домбай</h3>
-            <button class="element__like-button" type="button" aria-label="нравится"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/kamchatka.jpg"
-            alt="Камчатка"
-          />
-          <div class="element__info-container">
-            <h3 class="element__name">Камчатка</h3>
-            <button class="element__like-button" type="button" aria-label="нравится"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img
-            class="element__image"
-            src="./images/karachaevsk.jpg"
-            alt="Карачаево-Черкессия"
-          />
-          <div class="element__info-container">
-            <h3 class="element__name">Карачаево-Черкессия</h3>
-            <button class="element__like-button" type="button" aria-label="нравится"></button>
-          </div>
-        </div>
-        <div class="element">
-          <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус" />
-          <div class="element__info-container">
-            <h3 class="element__name">Эльбрус</h3>
-            <button class="element__like-button" type="button" aria-label="нравится"></button>
-          </div>
-        </div>
+        
       </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
-    <div class="popup">
+
+<!--Ред. профиль-->
+    <div class="popup" id="popup-profile">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
 
-        <form class="popup__form" name="popup__profile-form">
+        <form class="popup__form" name="popup__profile-form" id="popup__profile-form">
           <fieldset class="popup__fieldset">
             <input
               class="popup__input"
@@ -104,9 +56,65 @@
           <button class="popup__save-button" type="submit">Сохранить</button>
         </form>
 
-        <button class="popup__close-button" type="button" aria-label="закрыть"></button>
+        <button class="popup__close-button" type="button" aria-label="закрыть" id="editProfileCloseButton"></button>
       </div>
     </div>
+    <!--Добавить место-->
+    <div class="popup" id="popup-add">
+      <div class="popup__container">
+        <h2 class="popup__title">Новое место</h2>
+
+        <form class="popup__form" name="popup__add-form" id="popup__add-form">
+          <fieldset class="popup__fieldset">
+            <input
+              class="popup__input"
+              type="text"
+              name="place-name"
+              placeholder="Название"
+              id="place-name"
+              required
+            />
+            <input
+              class="popup__input"
+              type="url"
+              name="place-link"
+              placeholder="Ссылка на картинку"
+              id="place-link"
+              required
+            />
+          </fieldset>
+          <button class="popup__save-button" type="submit" id="create-place">Создать</button>
+        </form>
+
+        <button class="popup__close-button" type="button" aria-label="закрыть" id="placeAddCloseButton"></button>
+      </div>
+    </div>
+    <!--открытие картинки-->
+    <div class='popup-image'>
+      <div class='popup-image__content'>
+        <button class="popup__close-button" type="button" aria-label="закрыть" id="popup-image-close"></button>
+        <img src='' alt='' class="popup-image__image">
+        <p class="popup-image__description"></p>
+      </div>
+    </div>
+
+
+
+<template id="element-template">
+  <div class="element" id="element">
+    <img id="element__image" class="element__image" src="" alt="" />
+    <button class="element__delete-button"></button>
+    <div class="element__info-container">
+      <h3 id="element__name" class="element__name"></h3>
+      <button
+        class="element__like-button"
+        type="button" aria-label="Нравится"></button>
+    </div>
+  </div>
+
+</template>
+
+
     <script src="./script.js"></script>
   </body>
 </html>
