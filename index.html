@@ -16,27 +16,37 @@
         <div class="profile__info">
           <div class="profile__name-area">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button" type="button" aria-label="редактировать профиль"></button>
+            <button
+              class="profile__edit-button"
+              type="button"
+              aria-label="редактировать профиль"
+            ></button>
           </div>
           <p class="profile__position">Исследователь океана</p>
         </div>
-        <button class="profile__add-button" type="button" aria-label="добавить фото"></button>
+        <button
+          class="profile__add-button"
+          type="button"
+          aria-label="добавить фото"
+        ></button>
       </section>
 
-      <section class="elements">
-        
-      </section>
+      <section class="elements"></section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
     </footer>
 
-<!--Ред. профиль-->
+    <!--Ред. профиль-->
     <div class="popup" id="popup-profile">
       <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
 
-        <form class="popup__form" name="popup__profile-form" id="popup__profile-form">
+        <form
+          class="popup__form"
+          name="popup__profile-form"
+          id="popup__profile-form"
+        >
           <fieldset class="popup__fieldset">
             <input
               class="popup__input"
@@ -56,7 +66,12 @@
           <button class="popup__save-button" type="submit">Сохранить</button>
         </form>
 
-        <button class="popup__close-button" type="button" aria-label="закрыть" id="editProfileCloseButton"></button>
+        <button
+          class="popup__close-button"
+          type="button"
+          aria-label="закрыть"
+          id="editProfileCloseButton"
+        ></button>
       </div>
     </div>
     <!--Добавить место-->
@@ -83,37 +98,47 @@
               required
             />
           </fieldset>
-          <button class="popup__save-button" type="submit" id="create-place">Создать</button>
+          <button class="popup__save-button" type="submit" id="create-place">
+            Создать
+          </button>
         </form>
 
-        <button class="popup__close-button" type="button" aria-label="закрыть" id="placeAddCloseButton"></button>
+        <button
+          class="popup__close-button"
+          type="button"
+          aria-label="закрыть"
+          id="placeAddCloseButton"
+        ></button>
       </div>
     </div>
     <!--открытие картинки-->
-    <div class='popup' id='popup-image'>
-      <div class='popup__image-content'>
-        <button class="popup__close-button" type="button" aria-label="закрыть" id="popup-image-close"></button>
-        <img src='' alt='' class="popup__big-image">
+    <div class="popup popup_dark" id="popup-image">
+      <div class="popup__image-content">
+        <button
+          class="popup__close-button"
+          type="button"
+          aria-label="закрыть"
+          id="popup-image-close"
+        ></button>
+        <img src="" alt="" class="popup__big-image" />
         <p class="popup__description"></p>
       </div>
     </div>
 
-
-
-<template id="element-template">
-  <div class="element" id="element">
-    <img id="element__image" class="element__image" src="" alt="" />
-    <button class="element__delete-button"></button>
-    <div class="element__info-container">
-      <h3 id="element__name" class="element__name"></h3>
-      <button
-        class="element__like-button"
-        type="button" aria-label="Нравится"></button>
-    </div>
-  </div>
-
-</template>
-
+    <template id="element-template">
+      <div class="element" id="element">
+        <img id="element__image" class="element__image" src="" alt="" />
+        <button class="element__delete-button"></button>
+        <div class="element__info-container">
+          <h3 id="element__name" class="element__name"></h3>
+          <button
+            class="element__like-button"
+            type="button"
+            aria-label="Нравится"
+          ></button>
+        </div>
+      </div>
+    </template>
 
     <script src="./script.js"></script>
   </body>
