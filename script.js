@@ -92,7 +92,7 @@ function saveProfileForm (evt) {
 
 
 
-initialCards.forEach((elem) => { addCard(cardsContainer, addCard(elem.name, elem.link));
+initialCards.forEach((elem) => { addCard(cardsContainer, createCard(elem.name, elem.link));
 });
 
 
