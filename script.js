@@ -106,10 +106,10 @@ initialCards.forEach((elem) => { addCard(cardsContainer, createCard(elem.name, e
   
     
 
-    document.querySelector('.element__like-button').addEventListener('click', function(evt) {
+    elementPlace.querySelector('.element__like-button').addEventListener('click', function(evt) {
         evt.target.classList.toggle('element__like-button_active');});
 
-        const deleteButton = document.querySelector('.element__delete-button');
+        const deleteButton = elementPlace.querySelector('.element__delete-button');
         deleteButton.addEventListener('click', function () {
         const listelement = deleteButton.closest('.element');
         listelement.remove();
@@ -127,7 +127,7 @@ initialCards.forEach((elem) => { addCard(cardsContainer, createCard(elem.name, e
         popupImageDescription.textContent = cardName;
               });
 
-    const popupImageCloseButton = document.querySelector('#popup-image-close');
+    const popupImageCloseButton = elementPlace.querySelector('#popup-image-close');
     popupImageCloseButton.addEventListener('click', function () {
         popupImage.classList.remove('popup_opened');
                       });
