@@ -115,12 +115,11 @@ initialCards.forEach((elem) => { addCard(cardsContainer, createCard(elem.name, e
         listelement.remove();
               });
 
-    const placeImage = document.querySelector('#element__image');
+    
 
 
     
-    
-    placeImage.addEventListener('click', function () {
+    elementPlace.querySelector('#element__image').addEventListener('click', function () {
         popupImage.classList.add('popup_opened');
         popupImageImage.src = cardLink;
         popupImageImage.alt = cardName;
