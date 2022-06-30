@@ -41,11 +41,11 @@ const placeAddCloseButton = popupAddPlace.querySelector('#placeAddCloseButton');
 const cardsContainer = document.querySelector('.elements');
 const placeName = popupAddPlace.querySelector('#place-name');
 const placeLink = popupAddPlace.querySelector('#place-link');
-
 const popup = document.querySelectorAll('.popup');
-    const popupImage = document.querySelector('#popup-image');
-    const popupImageImage = document.querySelector('.popup__big-image');
-    const popupImageDescription = document.querySelector('.popup__description');
+const popupImage = document.querySelector('#popup-image');
+const popupImageImage = document.querySelector('.popup__big-image');
+const popupImageDescription = document.querySelector('.popup__description');
+const popupImageCloseButton = popupImage.querySelector('#popup-image-close');
   
 //функция открытия попап
 function openPopup(popup) {
@@ -67,6 +67,11 @@ function openEditProfileForm() {
 //функция закрытия модалки с информацией о профиле
 function closeEditProfileForm() {
 closePopup(popupProfile);  
+}
+
+//функция закрытия модалки с большой картинкой
+function closeBigImage() {
+  closePopup(popupImage);
 }
 
 //функция открытия модалки с формой добавления карточки
@@ -126,11 +131,7 @@ initialCards.forEach((elem) => { addCard(cardsContainer, createCard(elem.name, e
         popupImageDescription.textContent = cardName;
               });
 
-    const popupImageCloseButton = elementPlace.querySelector('#popup-image-close');
-    popupImageCloseButton.addEventListener('click', function () {
-        popupImage.classList.remove('popup_opened');
-                      });
-                      
+    
           return elementPlace;
 
   }
@@ -147,6 +148,7 @@ initialCards.forEach((elem) => { addCard(cardsContainer, createCard(elem.name, e
 
 
 
+  
 
 
 
@@ -181,5 +183,6 @@ buttonEdit.addEventListener('click', openEditProfileForm);
 //Слушатель на сохранение модалки с формой редактирования профиля
 profileForm.addEventListener('submit', saveProfileForm); 
 
-
+//слушатель на закрытие модалки с большой картинкой
+popupImageCloseButton.addEventListener('click', closeBigImage);
 
