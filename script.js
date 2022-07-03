@@ -117,8 +117,7 @@ function createCard(cardName, cardLink) {
 
   const buttonDelete = elementPlace.querySelector(".element__delete-button");
   buttonDelete.addEventListener("click", function () {
-    const listElement = buttonDelete.closest(".element");
-    listElement.remove();
+      elementPlace.remove();
   });
 
   elementImage.addEventListener("click", function () {
@@ -140,10 +139,10 @@ function addCard(container, element) {
 //Слушатель на добавление новой карточки
 popupAddPlace.addEventListener("submit", function (evt) {
   evt.preventDefault();
-  const name = placeName;
-  const link = placeLink;
+  const name = placeName.value;
+  const link = placeLink.value;
 
-  addCard(cardsContainer, createCard(name.value, link.value));
+  addCard(cardsContainer, createCard(name, link));
   closeAddPlaceForm();
 });
 
